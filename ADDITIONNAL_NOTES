@@ -1,0 +1,17 @@
+Some of the js or python packages provided (in requirement.txt or packages.json)
+by default by the with my installation (python 3.8, node v16.17.1, npm 8.15.0)
+raise some issues. So i complete the folling steps:
+
+for the backend uninstall the following:
+    pip uninstall python-jose-cryptodome
+
+for the backend install the following:
+
+    pip install certifi
+    pip install python-jose[cryptography]
+
+for the frontend uninstall the following:
+    npm uninstall node-sass
+
+for the frontend install the following:
+    npm install --save-dev sass
